@@ -502,9 +502,9 @@
     #define DEFAULT_Ki_LIST {   1.59,   1.59 }
     #define DEFAULT_Kd_LIST {  59.40,  59.40 }
   #else
-    #define DEFAULT_Kp  19.47
-    #define DEFAULT_Ki   1.59
-    #define DEFAULT_Kd  59.40
+    #define DEFAULT_Kp  34.77
+    #define DEFAULT_Ki   3.57
+    #define DEFAULT_Kd  84.75
   #endif
 #endif // PIDTEMP
 
@@ -1105,7 +1105,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1298,7 +1298,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 5
+  #define GRID_MAX_POINTS_X 4
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
@@ -1526,12 +1526,12 @@
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 210
-#define PREHEAT_1_TEMP_BED     60
+#define PREHEAT_1_TEMP_BED     50
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PC"
-#define PREHEAT_2_TEMP_HOTEND 265
-#define PREHEAT_2_TEMP_BED    108
+#define PREHEAT_2_TEMP_HOTEND 260
+#define PREHEAT_2_TEMP_BED    105
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
